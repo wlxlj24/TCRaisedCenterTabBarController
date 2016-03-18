@@ -68,10 +68,15 @@ static char overviewKey;
 {
 	UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
 	button.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin;
+	//  设定button大小为适应图片
 	button.frame = CGRectMake(0.0, 0.0, buttonImage.size.width, buttonImage.size.height);
 	[button setBackgroundImage:buttonImage forState:UIControlStateNormal];
 	[button setBackgroundImage:highlightImage forState:UIControlStateHighlighted];
 	
+	 //去掉选中button时候的阴影
+	button.adjustsImageWhenHighlighted = NO;
+	
+	//设置button的center 和 tabBar的 center 做对齐操作， 同时做出相对的上浮
 	CGFloat heightDifference = buttonImage.size.height - self.tabBar.frame.size.height;
 	if (heightDifference < 0)
 		button.center = self.tabBar.center;
