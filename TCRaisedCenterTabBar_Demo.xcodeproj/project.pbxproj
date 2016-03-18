@@ -16,6 +16,7 @@
 		525CB42D1C9B9C4100E9A819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525CB42B1C9B9C4100E9A819 /* LaunchScreen.storyboard */; };
 		525CB4381C9B9C4100E9A819 /* TCRaisedCenterTabBar_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 525CB4371C9B9C4100E9A819 /* TCRaisedCenterTabBar_DemoTests.m */; };
 		525CB4431C9B9C4100E9A819 /* TCRaisedCenterTabBar_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 525CB4421C9B9C4100E9A819 /* TCRaisedCenterTabBar_DemoUITests.m */; };
+		525CB4531C9B9CFA00E9A819 /* TCRaisedCenterTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525CB4521C9B9CFA00E9A819 /* TCRaisedCenterTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		525CB43E1C9B9C4100E9A819 /* TCRaisedCenterTabBar_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCRaisedCenterTabBar_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525CB4421C9B9C4100E9A819 /* TCRaisedCenterTabBar_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCRaisedCenterTabBar_DemoUITests.m; sourceTree = "<group>"; };
 		525CB4441C9B9C4100E9A819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525CB4511C9B9CFA00E9A819 /* TCRaisedCenterTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRaisedCenterTabBarController.h; sourceTree = "<group>"; };
+		525CB4521C9B9CFA00E9A819 /* TCRaisedCenterTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRaisedCenterTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 		525CB4191C9B9C4100E9A819 /* TCRaisedCenterTabBar_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				525CB4501C9B9CCD00E9A819 /* TCRaisedCenterTabBar */,
 				525CB41D1C9B9C4100E9A819 /* AppDelegate.h */,
 				525CB41E1C9B9C4100E9A819 /* AppDelegate.m */,
 				525CB4201C9B9C4100E9A819 /* ViewController.h */,
@@ -141,6 +145,15 @@
 				525CB4441C9B9C4100E9A819 /* Info.plist */,
 			);
 			path = TCRaisedCenterTabBar_DemoUITests;
+			sourceTree = "<group>";
+		};
+		525CB4501C9B9CCD00E9A819 /* TCRaisedCenterTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				525CB4511C9B9CFA00E9A819 /* TCRaisedCenterTabBarController.h */,
+				525CB4521C9B9CFA00E9A819 /* TCRaisedCenterTabBarController.m */,
+			);
+			name = TCRaisedCenterTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +288,7 @@
 			files = (
 				525CB4221C9B9C4100E9A819 /* ViewController.m in Sources */,
 				525CB41F1C9B9C4100E9A819 /* AppDelegate.m in Sources */,
+				525CB4531C9B9CFA00E9A819 /* TCRaisedCenterTabBarController.m in Sources */,
 				525CB4281C9B9C4100E9A819 /* TCRaisedCenterTabBar_Demo.xcdatamodeld in Sources */,
 				525CB41C1C9B9C4100E9A819 /* main.m in Sources */,
 			);
